@@ -224,10 +224,22 @@ body {
     font-size: 10px;
   }
   .container .testimonies {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 25px 0;
   }
   .container .testimonies-card {
-    width: 100%;
+    width: 30%;
+  }
+  .container .testimonies-card:first-child {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .container .testimonies-card:last-child {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 
@@ -257,24 +269,6 @@ body {
   }
   .container .banner {
     margin-top: 50px;
-  }
-  .container .testimonies {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 25px 0;
-  }
-  .container .testimonies-card {
-    width: 30%;
-  }
-  .container .testimonies-card:first-child {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-  }
-  .container .testimonies-card:last-child {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
 }
 

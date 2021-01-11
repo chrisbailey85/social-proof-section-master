@@ -181,9 +181,16 @@ body {
       }
     }
     .testimonies {
+      flex-direction: row;
       margin: 25px 0;
       &-card {
-        width: 100%;
+        width: 30%;
+        &:first-child {
+          transform: translateY(-20px);
+        }
+        &:last-child {
+          transform: translateY(20px);
+        }
       }
     }
   }
@@ -213,19 +220,6 @@ body {
     }
     .banner {
       margin-top: 50px;
-    }
-    .testimonies {
-      flex-direction: row;
-      margin: 25px 0;
-      &-card {
-        width: 30%;
-        &:first-child {
-          transform: translateY(-20px);
-        }
-        &:last-child {
-          transform: translateY(20px);
-        }
-      }
     }
   }
 }
